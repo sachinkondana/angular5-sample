@@ -13,3 +13,83 @@
     <td><a routerLink="/view/{{em.id}}">Edit</a></td>
   </tr>
 </table>
+<!-- <br>
+<br>
+<h1>template-driven-form</h1>
+<form #form="ngForm" (ngSubmit)="form.valid && logForm(form.value)">
+  <label>Name:</label>
+
+  <input id="name" name="name" class="form-control"
+     required minlength="4" appForbiddenName="bob"
+     [(ngModel)]="username" #name="ngModel"  >
+
+      <div *ngIf="name.invalid && (name.dirty || name.touched)"
+          class="alert alert-danger">
+          Name is required.
+      </div>
+
+  <button type="submit">Submit</button>
+</form>
+<br>
+<br> -->
+
+
+<!-- <br>
+<br>
+<h1>reactive-form</h1>
+<form [formGroup]="heroForm">
+  <label>Name:</label>
+
+  <input class="form-control" formControlName="name">
+
+  <div
+  class="error"
+  *ngIf="(heroForm.get('name').hasError('required') || heroForm.get('name').hasError('pattern')) && heroForm.get('name').touched">
+  Name is invalid
+  </div>
+
+  <button type="submit">Submit</button>
+
+</form>
+<br>
+<br> -->
+
+<!-- <br>
+<h1>reactive-form</h1>
+<form [formGroup]="heroForm">
+  <label>Name:</label>
+
+  <input class="form-control" formControlName="name">
+
+  <div
+  class="error"
+  *ngIf="(heroForm.get('name').hasError('required') || heroForm.get('name').hasError('pattern')) && heroForm.get('name').touched">
+  Name is invalid
+  </div>
+
+  <button type="submit">Submit</button>
+
+</form>
+<br>
+<br> -->
+
+
+<!-- <form [formGroup]="form">
+  <div *ngFor="let prop of objectProps">{{prop.label}}
+      <label [attr.for]="prop">{{prop.label}}</label>
+      <div [ngSwitch]="prop.type">
+          <input *ngSwitchCase="'text'"
+              [formControlName]="prop.key"
+              [id]="prop.key" [type]="prop.type">
+              
+
+          <div *ngIf="(form.get(prop.key).hasError('required') || form.get(prop.key).hasError('pattern')) && form.get(prop.key).touched">
+             Invalid
+          </div>
+
+      </div>
+  </div>
+
+  <button type="submit">Submit</button>
+
+</form> -->
