@@ -1,0 +1,19 @@
+{
+    "data":[{
+        "id":1000,
+        "name":"ajay",
+        "address":"Bangalore"
+    },{
+        "id":1001,
+        "name":"ashok",
+        "address":"Delhi"
+    },{
+        "id":1002,
+        "name":"Mithun",
+        "address":"Mumbai"
+    },{
+        "id":1003,
+        "name":"angular",
+        "address":"Bangalore"
+    }]
+}

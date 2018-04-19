@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  listapi:'assets/list.json',
+  viewapi:'assets/view.json'
 };

@@ -1,0 +1,18 @@
+<h3>View Empoyee</h3>
+<div *ngIf="empDetails">
+<div>
+  Name : <span>{{empDetails.name}}</span>
+</div>
+<div>
+  Address : <span>{{empDetails.address}}</span>
+</div>
+<div>
+  Designation : <span>{{empDetails.designation}}</span>
+</div>
+<div>
+  DOB : <span>{{empDetails.dob}}</span>
+</div>
+<div>
+  Bio : <span [innerHTML]="empDetails.bio"></span>
+</div>
+<div>

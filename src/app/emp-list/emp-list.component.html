@@ -1,0 +1,15 @@
+<h2>Employee List</h2>
+<table border="1">
+  <tr>
+    <th>Sl. No</th>
+    <th>Name</th> 
+    <th>Address</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let em of empList;let i=index">
+    <td>{{i+1}}</td>
+    <td>{{em.name}}</td> 
+    <td>{{em.address}}</td>
+    <td><a routerLink="/view/{{em.id}}">Edit</a></td>
+  </tr>
+</table>
